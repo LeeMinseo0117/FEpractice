@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      @keyframes rotate {
+        to {
+          transform: translateX((700px / 5));
+        }
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        height: 100vh;
+        perspective: 800px;
+      }
+      .wrap {
+        list-style: none;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transform-style: preserve-3d;
+      }
+      .wrap li {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        /* transform-style: preserve-3d; */
+        animation: rotate 10s infinite linear;
+      }
+      li img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px #0000004d;
+        /* transform: translate(-50%, -50%); */
+      }
+      .wrap li:nth-child(1) {
+        transform: translateX(0) translateZ(300px);
+        z-index: 3;
+      }
+      .wrap li:nth-child(2) {
+        transform: translateX(calc(-700px / 5)) translateZ(200px);
+        z-index: 2;
+        filter: brightness(70%);
+      }
+      .wrap li:nth-child(3) {
+        transform: translateX(calc(700px / 5)) translateZ(200px);
+        z-index: 2;
+        filter: brightness(70%);
+      }
+      .wrap li:nth-child(4) {
+        transform: translateX(calc((700px / 5) * -2)) translateZ(100px);
+        z-index: 1;
+        filter: brightness(50%);
+      }
+      .wrap li:nth-child(5) {
+        transform: translateX(calc((700px / 5) * 2)) translateZ(100px);
+        z-index: 1;
+        filter: brightness(50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul class="wrap">
+        <li>
+          <!-- 가운데 -->
+          <img src="./src/img3.png" alt="" />
+        </li>
+        <li>
+          <!-- 왼쪽 첫번째 -->
+          <img src="./src/img2.png" alt="" />
+        </li>
+        <li>
+          <!-- 오른쪽 첫번째 -->
+          <img src="./src/img4.png" alt="" />
+        </li>
+        <li>
+          <!-- 왼쪽 두번째 -->
+          <img src="./src/img1.png" alt="" />
+        </li>
+        <li>
+          <!-- 오른쪽 두번째 -->
+          <img src="./src/img5.png" alt="" />
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> </title>
+    <style>
+      section {
+        color: red;
+        border: 5px solid pink;
+      }
+      /* 부모 요소 상속 */
+      h1 {
+        border: inherit;
+      }
+      /* 브라우저 기본 스타일 속성 따름 */
+      h2 {
+        color: initial;
+      }
+      /* 속성을 자연 값으로 함 */
+      /* 자연적으로 상속되면 inherit
+      자연적으로 상속되지 않으면 initial */
+      p {
+        border: unset;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Hello</h1>
+      <h2>Hello</h2>
+      <p>Hello</p>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.grid {
+  display: grid;
+  width: 600px;
+  height: 400px;
+  grid-template-columns: 1fr 1fr;
+  margin: 50px;
+  gap: 10px;
+}
+
+.container1 {
+  font-family: "Pretendard-Regular";
+  width: 288px;
+  height: 348px;
+  top: 46px;
+  left: 63px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px 0px #0000001a;
+}
+.container1 img {
+  width: 288px;
+  aspect-ratio: 288/196;
+  object-fit: cover;
+  border-radius: 8px 8px 0px 0px;
+}
+.container1 .text {
+  margin: 20px 16px 0 16px;
+}
+.container1 #main {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  color: #29363d;
+}
+.container1 #content {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+  width: 256px;
+  height: 40px;
+  overflow: hidden;
+  color: #5a6a72;
+}
+.container1 a {
+  color: #29363d;
+}
+
+.container2 {
+  font-family: "Pretendard-Regular";
+  width: 288px;
+  height: 374px;
+  top: 46px;
+  left: 378px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px 0px #0000001a;
+}
+.container2 #profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  float: left;
+}
+.container2 .header {
+  /* display: inline; */
+  width: 256px;
+  height: 40px;
+  top: 16px;
+  left: 16px;
+  gap: 16px;
+  padding: 16px 16px 12px 16px;
+}
+.container2 .header #head {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+  text-align: left;
+  margin: 0;
+  margin-left: 16px;
+}
+.container2 .header #secondary {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.4px;
+  text-align: left;
+  color: #5a6a72;
+  margin-top: 1px;
+  margin-left: 16px;
+}
+.container2 .main #thumbnail {
+  width: 288px;
+  aspect-ratio: 288/196;
+  object-fit: cover;
+  top: 68px;
+}
+.container2 #content {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+  width: 256px;
+  height: 40px;
+  overflow: hidden;
+  color: #5a6a72;
+  margin: 10px 16px 16px 16px;
+}
+.container2 .footer {
+  display: flex;
+  width: 256px;
+  height: 32px;
+  top: 326px;
+  left: 16px;
+  padding: 0 16px 16px 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+.container2 .footer .a {
+  width: 70px;
+  height: 24px;
+  top: 326px;
+  left: 160px;
+}
+.container2 .footer .a a {
+  color: #29363d;
+}
+.container2 .footer .a::after {
+  content: ">";
+  margin-left: 10px;
+}
+.container2 .footer .button {
+  width: 112px;
+  height: 32px;
+  /* flex-grow: 1; */
+}
+
+button {
+  background-color: transparent;
+  border: transparent;
+  padding: 0;
+}

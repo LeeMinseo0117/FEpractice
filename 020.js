@@ -11,3 +11,4 @@ var bruce = {
 
 peter.sayName.apply(bruce, ["batman", "richman"]);
 peter.sayName.call(bruce, ["batman", "richman"]);
+peter.sayName.call(bruce, "batman", "richman");
